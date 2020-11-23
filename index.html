@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a74b6be127.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile</title>
+</head>
+<body>
+
+    <!-- naigation bar -->
+    <header id="navigation">
+
+        <div class="desktop">
+            <i class="fab fa-github fa-2x github-icon"></i>
+
+            <div class="search-form-group">
+                <input placeholder="Search of jump to..." class="search-form-control" type="text">
+                <span class="search-form-slash">/</span>
+            </div>
+    
+            <ul class="navigation">
+                <li><a href="#home">Pulls</a></li>
+                <li><a href="#news">Issues</a></li>
+                <li><a href="#contact">Marketplace</a></li>
+                <li><a href="#about">Explore</a></li>
+            </ul>
+    
+            <div class="header-right-icons">
+                <span style="margin-right: 20px">
+                    <i class="fas fa-bell"></i>
+                </span>
+                <span style="margin-right: 20px">
+                    <i class="fas fa-plus" style="margin-right: 2px"></i>
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                </span>
+                <span style="margin-right: 20px">
+                    <i class="fas fa-smile" style="margin-right: 2px"></i>
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="mobile">
+            
+            <div class="flex-contaniner">
+                <i id="mobile-menu" class="fas fa-bars fa-2x pointer menu-icon"></i>            
+                <i class="fab fa-github fa-2x pointer github-icon"></i>
+                <i class="fas fa-bell bell-icon pointer" style="margin-top: 10px" ></i>
+            </div>
+
+            <div id="mobile-dropdown-menu" class="dropdown-menu" style="display: none; z-index: 1;">
+                <div class="search-form-group">
+                    <input placeholder="Search of jump to..." class="search-form-control" type="text">
+                    <span class="search-form-slash">/</span>
+                </div>
+                <a href="#" class="active">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Pull requuests</a>
+                <a href="#">Issues</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Explore</a>
+                <a href="#">Settings</a>
+                <a href="#"><span><img id="mini-avatar" height="25"></span><span id="mini-login" ></span></a>
+                <a href="#">Sign out</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Main section that is always dynamic -->
+    <main id="main_section" class="row">
+
+        <!-- Sidebar that contains the profile basic details -->
+        <section id="aside" class="col-3 aside">
+
+            <div class="row">
+                <span style="position: relative">
+                    <img id="avatar" class="main_profile" alt="">
+                    <i class="fas fa-smile smile"></i>            
+
+                </span>
+
+                <div class="">
+                    <span class="h3" id="full-name" ></span>
+                    <span class="h5 d-block" id="login" style="margin: 5px 0;"></span>
+                    
+                    <span id="bio" ></span>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!-- Repo list -->
+        <section class="content col-9" >
+
+            <div class="main_div">
+                <ul class="main_nav">
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-book-open"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-book"></i>
+                            <span>Repositories</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-poll"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-dice-d6"></i>
+                            <span>Packages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row searh-repo-div">
+                <div class="col-s-12">
+                    <input class="search-repo" placeholder="Find a repository..." type="text" style="width: 100%;">
+                </div>
+
+            </div>
+
+            <div id="repos" class="row">
+                <div class="col-12 repo-overview-cover" id="repo-section">
+                    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+</body>
+
+<script src="./js/main.js"></script>
+</html>

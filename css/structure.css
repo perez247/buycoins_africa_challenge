@@ -1,0 +1,278 @@
+* 
+
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    color: #444d56;;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+}
+
+/* Typography */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 1.17em;
+}
+
+.h5 {
+    font-size: 0.83em;
+}
+
+
+/* header and Menu list */
+
+header {
+    background-color: #24292E;
+    /* padding: 10px; */
+    width: 100%;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+}
+
+ul.navigation li {
+    display: inline-flex;
+}
+
+
+ul.navigation li a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-weight: 600;
+}
+
+ul.navigation li a:hover {
+    color: #B6BFC1
+}
+
+.github-icon {
+    color: #ccc;
+    margin-right: 16px;
+    margin-left: 16px;
+    /* align-self: stretch; */
+}
+
+.bell-icon, .menu-icon  {
+    color: #ccc;
+}
+
+.header-right-icons {
+    position: absolute;
+    right: 20px;
+    color: white;
+}
+
+.main_div {
+    border-bottom: 1px solid #ccc;
+    /* padding-bottom: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    overflow-x: auto;
+    justify-content: space-between;
+
+}
+
+ul.main_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    display: flex;
+}
+
+ul.main_nav li {
+    display: inline-flex;
+}
+
+
+ul.main_nav li a {
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    float: left;
+    color: black;
+    padding-bottom: 18px;
+}
+
+ul.main_nav li a:hover {
+    /* background-color: #111111; */
+
+    border-bottom: 2px solid rgb(186, 186, 186)
+}
+
+
+
+
+/* Profile image */
+
+.main_profile {
+    border-radius: 100%;
+    width: 12rem;
+}
+
+#mini-avatar {
+    border-radius: 50%;
+    margin-right: 9px;
+    height: 25px;
+}
+
+/* repos */
+.repo-overview-cover {
+    padding: 5px;
+}
+
+.repo-overview {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    min-height: 120px;
+}
+
+.repo-title {
+    color: #0366d6;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.repo-description {
+    margin: 10px 0px;
+}
+
+.language {
+    margin: 0px 5px;;
+}
+
+.repo-title:hover {
+    text-decoration: underline;
+}
+
+.star {
+    text-align: right;
+}
+
+.smile {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+
+}
+
+/* Containers */
+
+.aside {
+    text-align: left;
+}
+
+/* Structures */
+
+.d-block {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.desktop {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile {
+    width: 100%;
+    position: relative;
+}
+
+.flex-contaniner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #24292E;
+}
+
+.dropdown-menu a {
+    background-color: none;
+    color: white;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    border-top: 0.1px solid #444d56;
+    font-weight: 600;
+  }
+
+/* Forms */
+
+.search-form-control {
+    min-height: 28px;
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-form-group {
+    border: 1px solid #444d56;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+.search-form-slash {
+    padding: 2px 6px;
+    border: 1px solid #444d56;
+    color: #444d56;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-repo {
+    border: 1px solid #c1c2c3;
+    border-radius: 5px;
+    min-height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
